@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { container } from "tsyringe";
 
-import { CreateClientUseCase } from "./CreteClientUseCase";
+import { CreateClientUseCase } from "./CreateClientUseCase";
 import { ICreateClientDTO } from "@modules/clients/dtos/ICreateClientDTO";
 
 class CreateClientController{

@@ -46,11 +46,11 @@ class ClientRepository implements IClientRepository{
         }
     }
 
-    async findById(id: unknown): Promise<Client> { // ENCONTRAR UM UNÍCO CLIENTE PELO ID
+    async findById(id: string): Promise<Client> { // ENCONTRAR UM UNÍCO CLIENTE PELO ID
         try{
 
             const client = await this.prisma.client.findUnique({
-                where: id,
+                where: { id },
             });
             return client;
 
