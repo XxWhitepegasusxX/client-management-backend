@@ -8,7 +8,6 @@ interface IClientRepository{
     listClients(): Promise<Client[]>;
     findById(id: string): Promise<Client>;
     findByCpf(cpf: string): Promise<Client>;
-    findById(id: string): Promise<Client>;
     deleteClient(id: string): Promise<void>;
 
 }
